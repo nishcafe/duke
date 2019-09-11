@@ -32,6 +32,8 @@ public class Parser {
                 if (userCommand.equals("bye")) {
                     dukeText = this.ui.bye();
                     this.storage.close(this.commands);
+                } else if (userCommand.equals("help")) {
+                   dukeText = this.ui.help();
                 } else if (userCommand.equals("list")) {
                     dukeText = this.ui.list() + "\n" + this.commands.list();
                 } else if (userCommand.equals("done")) {

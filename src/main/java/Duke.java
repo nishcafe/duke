@@ -81,9 +81,9 @@ public class Duke extends Application {
         scrollPane.setVvalue(1.0);
         scrollPane.setFitToWidth(true);
 
-        dialogContainer.setPrefHeight(Region.USE_COMPUTED_SIZE);
-
-        userInput.setPrefWidth(325.0);
+//        dialogContainer.setPrefHeight(Region.USE_COMPUTED_SIZE);
+//        userInput.setPrefWidth(325.0);
+        userInput.setPrefWidth(500);
 
         sendButton.setPrefWidth(55.0);
 
@@ -116,6 +116,10 @@ public class Duke extends Application {
     private Label getDialogLabel(String text) {
         Label textToAdd = new Label(text);
         textToAdd.setWrapText(true);
+        textToAdd.setMaxHeight(Double.MAX_VALUE);
+//        textToAdd.setMaxWidth();
+//        textToAdd.autosize();
+//        setupsPane.getChildren().add(label);
 
         return textToAdd;
     }

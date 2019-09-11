@@ -66,4 +66,19 @@ public class Ui {
         return "Here are the matching tasks in your list:";
     }
 
+    public String help() {
+        return "Here are a list of possible commands:\n" +
+                "1. 'list' - List all the current tasks\n" +
+                "2. 'done <(int) i>' - Mark the i-th task on the list as done\n" +
+                "3. 'delete <(int) i>' - Delete the i-th task on the list\n" +
+                "4. 'find <word>' - Return a list of tasks that contain <word>\n" +
+                "5. To add a task:\n" +
+                "  (There are three types of tasks you can add: Todo, Event, Deadline)\n" +
+                "  6. 'todo <description>' - Todo: tasks without any date/time attached\n" +
+                "  7. 'event <description> /at <date (in a dd/mm/yyyy format)> <time (in a 24-hour format)>'" +
+                " - Event: tasks that start at a specific time\n" +
+                "  8. 'deadline <description> /by <date (in a dd/mm/yyyy format)> <time (in a 24-hour format)>'" +
+                " - Deadline: tasks that need to be done before a specific date/time\n";
+    }
+
 }
